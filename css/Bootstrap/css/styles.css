@@ -1,0 +1,207 @@
+/* HEADER */
+
+header {
+	background-color: #cee6f0;
+	height: 190px;
+}
+
+.header-container {
+	margin:0 auto;
+	width: 1000px;
+}
+
+.header-content {
+	height: 110px;
+	
+}
+
+#logo {
+	margin:12px 0px 0px 65px;
+}
+
+.title {
+	margin-top: 35px;
+	margin-left: 28px;
+	color: #1129db;
+	font-family: "Franklin Gothic Medium";
+	font-size: 34px;
+	line-height: 30%;
+	letter-spacing: -1px;
+	text-shadow: 1.5px 1.5px 2.5px black, 0 0 2px gray;
+}
+
+h2.indent {
+	text-indent: 140px;
+}
+
+.header-contacts {
+	margin-top:20px;
+	margin-right: 59px;
+	line-height: 115%;
+}
+
+.header-contacts span {
+	float: right;
+	color: #F79C0A;
+	font-family: Verdana;
+	font-style: italic;
+	font-size: 12px;
+}
+
+.header-main {
+	position: relative;
+}
+
+.courses-title {
+	position: absolute;
+	top: 76px;
+	left: 20px;
+}
+
+.courses-title p {
+	color: #1129db;
+	font-family: "Segoe Script";
+	line-height: 60%;
+}
+
+.courses-title span {
+	color: #000;
+	padding-left:10px;
+}
+
+.courses-begin {
+	position: absolute;
+	top: 20px;
+	left: 375px;
+	width: 165px;
+	height: 41px;
+	background:url('../images/Ribbon.png') 0 0 no-repeat;
+}
+
+.courses-begin p {
+	margin-left: 36px;
+	margin-top: 5px;
+	-moz-transform: rotate(-9deg); /* Для Firefox */
+    -ms-transform: rotate(-9deg); /* Для IE */
+    -webkit-transform: rotate(-9deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(-9deg); /* Для Opera */
+    transform: rotate(-9deg);
+    color: #fff;
+    font-size: 18px;
+    font-family: "Franklin Gothic Medium";
+}
+
+/* MENU */
+
+nav {
+	margin-top: 22px;
+	margin-left: 60px;
+}
+
+ul.nav-pills li {
+	margin-right: 32px;
+
+}
+
+ul.nav-pills li a {
+	background-color: #40bebe;
+	color:#fff;
+	font-size: 12px;
+	border: 3px solid #2DB0D1;
+}
+
+ul.nav-pills li a:hover {
+	background-color: #2db0d1;
+	transition:0.3s;
+}
+
+ul.nav-pills li a:active {
+	background-color: #2db0d1;
+}
+
+ul.nav-pills li a.active {
+	background-color: #F79C0A;
+	border: 3px solid #ffb700;
+}
+
+/* MAIN section */
+
+.main {
+	margin:0 auto;
+	width: 1200px;
+	height: 845px;
+	background:url('../images/Oak.png') 100px 30px no-repeat;
+}
+
+.languages {
+	margin: 0 auto;
+	width:1000px;
+	height: 200px;
+}
+
+.language {
+	margin:0 auto;
+	padding-top: 20px;
+	width: 100px;	
+}
+
+.language a img {
+	width: 100px;
+	height: 95px;
+	margin-bottom: 20px;
+}
+
+.language a img:hover {
+	width: 110px;
+	height: 105px;
+	margin-bottom: 10px;
+}
+
+
+.language p {
+	color: #2d3333;
+	text-align: center;
+	font:bold 13px Verdana, Tahoma;
+}
+
+
+/* FEATURES section */
+
+.features {
+	margin: 0 auto;
+	height: 400px;
+	background-color: #f79334;
+}
+
+.features-row {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+.feature {
+	margin: 0 auto;
+	width:290px;
+	padding-top: 20px;
+}
+
+.feature-heading {
+	margin-right: 50px;
+	margin-top:8px;
+	float: right;
+	font:24px Tahoma;
+}
+
+.feature-heading a {
+	color:#fff;
+}
+
+.feature-anons {
+	margin-top: 16px;
+	width: 100%;
+	color:#fff;
+	font:14px Tahoma;
+}
+
+.location .feature-heading {
+	margin-right: 20px;
+}

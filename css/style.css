@@ -1,0 +1,143 @@
+/* MAIN STYLES */
+
+.app-container {
+	margin: 0 auto;
+	width:750px;
+	background-color: #dde;
+	border:1px solid #082e4c;
+  	border-radius: 20px; /* CSS3 */
+}
+
+.content {
+	margin: 0 auto;
+	width: 95%;
+}
+
+.content>div {
+	clear: both;
+}
+
+div.levels {
+	padding-top: 20px;
+}
+
+.letter {
+	margin-bottom: 5px;
+	margin-right: 5px;
+	width:43px;
+}
+
+.all {
+	margin-left:250px;
+	width:120px;
+}
+
+.level {
+	margin-bottom: 5px;
+	margin-left:35px;
+	margin-right:35px; 
+	width:250px;	
+}
+
+.form-container {
+	clear: both;
+	height: 80px;
+}
+
+form {
+	margin-top: 30px;
+	margin-right: 160px;
+}
+
+ul {
+	margin: 0;
+	list-style: none;
+}
+
+ul li {
+	margin: 0;
+}
+
+hr {
+	width: 60%;
+	margin-top: 5px;
+	margin-bottom: 8px;
+	margin-left: 50px;
+	box-shadow: 1px 1px 2px black, 0 0 2px gray;
+}
+
+table td {
+	width: 20%;
+}
+
+.btn-primary {
+	background-color: #39f;
+	box-shadow: 1px 1px 2px black, 0 0 2px gray;
+}
+
+.a-div hr {
+	display:none;
+}
+
+.active-link {
+	background-color: orange;
+	border-color: orange;
+	color: #000;
+}
+
+.active-link:hover {
+	background-color: orange;
+	border-color: orange;
+	color: #000;
+}
+
+/*INDEX STYLES */
+
+.verbs-list {
+	clear: both;
+	height:500px;
+	padding: 0;
+	border-radius: 30px; /* CSS3 */
+}
+
+.verbs-list ul {
+	width: 96%;
+}
+
+.verbs-list ul li {
+	margin-left:10px;
+}
+
+.verbs-list ul li a {
+	margin-bottom: 5px;
+	border-radius: 8px;
+	color:#000;
+}
+
+.verbs-list div {
+	clear: both;
+}
+
+.verbs-table {
+	clear: both;
+	padding-top: 28px;
+}
+
+table a {
+	color: #061b29;
+	text-decoration: underline;
+}
+
+table a:hover {
+	color: #39f;
+}
+
+.empty {
+	margin-right: 60px;
+	clear: both;
+}
+
+.copyright p {
+	padding-top: 25px;	
+}
+
