@@ -39,7 +39,7 @@ class DbConnection
 	 * 
 	 * @return array : массив слов, начинающихся со $start
 	 */
-	public function get_by_start($start) 
+	public function getByStart($start) 
 	{
 		$start .= '%';
 		
@@ -61,7 +61,7 @@ class DbConnection
 	 * 
 	 * @return array : массив слов, соответствующих $level
 	 */
-	public function get_by_level($level) 
+	public function getByLevel($level) 
 	{
 		try {
 			$result = $this->db_conn->query("SELECT *						
@@ -82,7 +82,7 @@ class DbConnection
 	 * 
 	 * @return array : ряд из таблицы БД, соответствующий слову 
 	 */
-	public function get_word($word) 
+	public function getWord($word) 
 	{
 		try {
 			$result = $this->db_conn->query("SELECT * FROM $this->db_table 

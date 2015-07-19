@@ -10,7 +10,7 @@ abstract class PagesController
 	 * 
 	 * @return callable : функция подключения страницы отображения данных
 	 */
-	private static function get_no_results() 
+	private static function getNoResults() 
 	{
 		$status = 'Ничего не найдено';
 		return view('empty', compact('status'));	
@@ -24,12 +24,12 @@ abstract class PagesController
 	 * 
 	 * @return callable : функция подключения страницы отображения данных
 	 */
-	public static function search_by_start($start, $conn) 
+	public static function searchByStart($start, $conn) 
 	{
-		$verbs = $conn->get_by_start($start);
+		$verbs = $conn->getByStart($start);
 		
 		if (empty($verbs)) {
-			self::get_no_results();
+			self::getNoResults();
 			die();
 		}
 
@@ -46,12 +46,12 @@ abstract class PagesController
 	 * 
 	 * @return callable : функция подключения страницы отображения данных
 	 */
-	public static function search_by_level($level, $conn) 
+	public static function searchByLevel($level, $conn) 
 	{
-		$verbs = $conn->get_by_level($level);
+		$verbs = $conn->getByLevel($level);
 		
 		if (empty($verbs)) {
-			self::get_no_results();
+			self::getNoResults();
 			die();
 		}
 		return view('level', compact('verbs'));
@@ -65,12 +65,12 @@ abstract class PagesController
 	 * 
 	 * @return callable : функция подключения страницы отображения данных
 	 */
-	public static function search_word($word, $conn) 
+	public static function searchWord($word, $conn) 
 	{
-		$verb = $conn->get_word($word);
+		$verb = $conn->getWord($word);
 		
 		if (empty($verb)) {
-			self::get_no_results();
+			self::getNoResults();
 			die();
 		}
 		return view('word', compact('verb'));

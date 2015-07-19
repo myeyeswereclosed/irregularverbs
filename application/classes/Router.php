@@ -29,21 +29,21 @@ class Router
 	public function get_controller_set() 
 	{
 		if ($this->request_method == 'POST') {
-			$controller_set['method'] = 'search_by_start';
+			$controller_set['method'] = 'searchByStart';
 			$controller_set['param'] = $_POST['search'];
 		} else {
 			switch (count($this->params)) {
 				case 2:	
 					if (strlen($this->params[1]) <= 1) {
-						$controller_set['method'] = 'search_by_start';
+						$controller_set['method'] = 'searchByStart';
 					} elseif (in_array($this->params[1], $this->levels)) {
-						$controller_set['method'] = 'search_by_level';
+						$controller_set['method'] = 'searchByLevel';
 					} else {
-						$controller_set['method'] = 'search_word';	
+						$controller_set['method'] = 'searchWord';	
 					} 
 					break;
 				default:
-					$controller_set['method'] = 'search_word';
+					$controller_set['method'] = 'searchWord';
 					$controller_set['param'] = $this->params[1];
 					break;
 			}

@@ -34,7 +34,7 @@ class GetRequestValidator implements Validator
 	 *  
 	 * @return boolean : соответствие правилу максимальной длины пути
 	 */
-	private function validate_paths() 
+	private function validatePaths() 
 	{
 		return (count($this->path) <= $this->rules['max_path_length']);
 	}
@@ -44,7 +44,7 @@ class GetRequestValidator implements Validator
 	 *  
 	 * @return boolean : соответствие правилу допустимых символов 
 	 */
-	private function validate_data() 
+	private function validateData() 
 	{
 		foreach ($this->path as $path) {
 			if (preg_match($this->rules['pattern'], $path)) {
@@ -61,8 +61,8 @@ class GetRequestValidator implements Validator
 	 */
 	public function validate() 
 	{
-		return ($this->validate_paths() &&
-				$this->validate_data());			
+		return ($this->validatePaths() &&
+				$this->validateData());			
 	}
 
 }
