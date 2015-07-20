@@ -26,7 +26,7 @@ class Router
 	 * 
 	 * @return array : массив метода и параметра поиска
 	 */
-	public function get_controller_set() 
+	public function getControllerSet() 
 	{
 		if ($this->request_method == 'POST') {
 			$controller_set['method'] = 'searchByStart';

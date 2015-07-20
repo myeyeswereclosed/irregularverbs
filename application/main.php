@@ -38,8 +38,8 @@ if (!$validator->validate()) {
 
 	if (!$db_conn)
 		die('No connection to database');
-	$controller_method = $router->get_controller_set()['method'];
-	$controller_param  = $router->get_controller_set()['param'];
+	$controller_method = $router->getControllerSet()['method'];
+	$controller_param  = $router->getControllerSet()['param'];
 
 	PagesController::$controller_method($controller_param, $db_conn);
 }
